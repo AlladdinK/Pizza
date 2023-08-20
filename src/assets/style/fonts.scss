@@ -1,0 +1,9 @@
+$font: ("Regular", 400, "ttf"), ("Bold", 700, "otf"), ("ExtraBold", 800, "otf");
+
+@each $name, $weight, $type in $font {
+  @font-face {
+    font-family: "proxima";
+    src: url("../fonts/proximanova_#{$name}.#{$type}");
+    font-weight: $weight;
+  }
+}
